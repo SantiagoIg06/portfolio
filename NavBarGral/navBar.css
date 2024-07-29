@@ -1,0 +1,27 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: rgb(222,13,175);
+    background: radial-gradient(circle, rgba(222,13,175,1) 1%, rgba(110,25,221,1) 70%, rgba(0,255,239,1) 100%);
+}
+nav {
+    background-color: #fffb;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.nav-list {
+    display: flex;
+    margin: 20px;
+}
+nav div li a {
+    color: #000;
+}
+nav div li a:hover {
+    border-bottom: 1px solid #000;
+}
