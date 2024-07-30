@@ -1,6 +1,6 @@
 section {
     border-radius: 15px;
-    padding: 10px ;
+    padding: 10px;
     width: 95%;
     margin: 1%;
     background-color: #000c;
@@ -8,6 +8,7 @@ section {
     display: flex;
     justify-content: start;
 }
+
 .navBar {
     background-color: white;
     width: 55px;
@@ -17,10 +18,25 @@ section {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    transition: width 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navBar.expanded {
+    width: 200px; 
+}
+.nav1 {
+    border-bottom: 1px solid black;
+
 }
 .nav1, .nav2 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .nav2 {
     height: 400px;
     display: flex;
@@ -28,43 +44,110 @@ section {
     align-items: center;
     justify-content: center;
 }
-.btn-img-home {
+.btn-menu-img {
+    cursor: pointer;
+}
+.btn-img-menu {
     display: flex;
     justify-content: center;
     background-color: transparent;
     border: transparent;
-    border-bottom: 1px solid black;
+    margin: 10px 0px;
 }
+
 .img-nav {
-    width: 60%;
-    padding: 10px 0px;
+    width: 30px; 
+    height: 30px; 
 }
+
+.menu-text {
+    display: none;
+    margin-left: 10px;
+}
+
+.btn-close {
+    display: none;
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navBar.expanded .menu-text,
+.navBar.expanded .btn-close {
+    display: block;
+}
+
 section div div a {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
 .img-navM {
+    width: 30px; 
+    height: 30px; 
     margin: 10px 0px;
-    padding: 5px 5px;
-    width: 60%;
+    padding: 5px;
+    transition: transform 1s, background-color 1s;
 }
-.img-navM:hover{
+
+.nav-text {
+    display: none;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
     border-radius: 10px;
-    transition: 1s;
-    transform: translate(20px, 0px);
 }
+
+.navBar.expanded .nav-text {
+    width: 50%;
+    display: inline;
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.navBar:not(.expanded) .img-navM:hover {
+    transform: translateY(-20px);
+}
+
+.navBar.expanded .img-navM:hover {
+    transform: translateX(20px);
+}
+
 .img-cs:hover {
     background-color: #ee22aa;
 }
+.img-cs{
+    border-radius: 10px;
+}
+
 .img-pfl:hover {
     background-color: #d622ee;
 }
+.img-pfl{
+    border-radius: 10px;
+}
+
 .img-msj:hover {
     background-color: #7022ee;
 }
+.img-msj{
+    border-radius: 10px;
+}
+
 .img-cmr:hover {
     background-color: #4122ee;
 }
+.img-cmr{
+    border-radius: 10px;
+}
+
 .img-ajs:hover {
     background-color: #2274ee;
+}
+.img-ajs{
+    border-radius: 10px;
 }
