@@ -1,3 +1,4 @@
+// V5
 let head = document.querySelector("head");
 head.innerHTML += `
 <link rel="preconnect" href="https://fonts.googleapis.com">
