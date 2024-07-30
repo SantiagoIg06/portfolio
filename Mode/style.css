@@ -51,9 +51,7 @@ section {
 }
 .img-mode-os {
     transition: 1s;
-
     animation: moveos 1s forwards;
-    filter: brightness(150%);
 }
 @keyframes movebl {
     0% {
