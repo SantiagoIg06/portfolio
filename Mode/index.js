@@ -1,3 +1,4 @@
+// V3
 let contenedorGeneral = document.getElementById('contGral');
 let contenedorImagen = document.getElementById('contImgMove');
 let imagen = document.getElementById('moveImg');
