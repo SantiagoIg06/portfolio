@@ -6,8 +6,8 @@ window.onload = function() {
             <div class="nav-list">
                 <li><a href="../">Inicio</a></li>
                 <li><a href="../Calculadora/">Calculadora</a></li>
-                <li><a href="../NavBar/">NavBar</a></li>
-                <li><a href="../Mode/">Mode</a></li>
+                <li><a href="../NavBar/">Barra de navegacion</a></li>
+                <li><a href="../Mode/">Modo claro y oscuro</a></li>
                 <li><a href="#">C</a></li>
             </div>
         `;
