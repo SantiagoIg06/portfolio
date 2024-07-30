@@ -1,3 +1,4 @@
+// V1
 // Modo y resultado 
 let modeDW = document.getElementById("modeDW")
 let result = document.getElementById("result")
