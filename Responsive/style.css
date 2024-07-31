@@ -1,16 +1,17 @@
 section {
     border-radius: 15px;
-    padding: 20px;
-    width: 95%;
-    height: 550px;
+    padding: 4%;
+    width: 90%;
+    height: 100%;
     margin: 1%;
     background-color: #000c;
-    margin: 20px;
     display: flex;
     justify-content: start;
 }
+
 .cont {
     width: 100%;
+    height: 100%;
     background-color: #f00;
     border-radius: 10px;
 }
@@ -21,9 +22,28 @@ section {
     height: 60px;
 }
 .desactive {
-    display: none;
+    transition: 1s;
+    display: none !important;
 }
 .active {
+    transition: 1s;
+    display: block !important;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: #f007;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalDsc {
+    display: none;
+}
+.modalAct {
+    position: relative;
     display: block;
 }
 .cont-logo {
@@ -49,8 +69,13 @@ div a li:hover {
 .cont-logo, .cont-menu {
     display: flex;
 }
+.img-menu {
+    width: 100%;
+    display: flex;
+}
 a li {
     color: #fff;
+    font-size: 20px;
 }
 .logo {
     filter: brightness(150%);
@@ -126,4 +151,326 @@ h2 b {
 }
 .img-cont {
 width: 80%;
+}
+
+@media (max-width: 1100px) {
+    section {
+        border-radius: 15px;
+        padding: 4%;
+        width: 90%;
+        height: 450px;
+        margin: 1%;
+        background-color: #000c;
+        display: flex;
+        justify-content: start;
+    }
+    .navegation {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+    }
+    .cont-menu {
+        width: 10%;
+        align-items: center;
+        justify-content: end;
+    }
+    .tittle-info {
+        color: #fff;
+        width: 60%;
+        font-size: 25px;
+    }
+    h2 b {
+        font-weight: 600;
+    }
+    .contenido-info {
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #fff;
+        font-size: 15px;
+    }
+    .btn-cont {
+        transition: 0.5s;
+        font-weight: 800;
+        margin-top: 10px;
+        width: 40%;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 25px;
+    }
+    .social-icons {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    a li {
+        font-size: 15px;
+        margin: 10px;
+        color: #fff;
+    }
+    .icon {
+        color: #000; 
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        transition: color 0.3s, background-color 0.3s;
+        text-decoration: none;
+    }
+    .icon:hover {
+        color: #fff; 
+        background-color: #000; 
+    }
+    .imagen-contenido {
+        display: flex;
+        justify-content: center;
+    }
+    .img-cont {
+    width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        border-radius: 15px;
+        padding: 4%;
+        width: 90%;
+        height: 450px;
+        margin: 1%;
+        background-color: #000c;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .modalList1,.modalList2,.modalList3,.modalList4 {
+        color: #fff;
+    }
+    .desactive {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .desactiveCont {
+        display: none !important;
+    }
+    .modal.modalAct {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .menuModal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%; 
+        height: auto;
+        background-color: #fff; 
+        padding: 20px;
+        border-radius: 10px;
+        position: relative; 
+    }
+    .menuModal a {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .menuModal a li {
+        margin: 10px 0; 
+        padding: 10px 0;
+        width: 100%;
+        list-style: none;
+        background-color: #000; 
+        border-radius: 5px;
+    }
+    .menuModal a li:hover {
+        border: 1px solid #000;
+        background-color: #fff; 
+        color: #000;
+    }
+    .btn-close {
+        position: absolute; 
+        top: 10px;
+        right: -250px; 
+        background: transparent;
+        border: transparent;
+        font-size: 20px; 
+        cursor: pointer; 
+    }
+    .navegation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+    }
+    .cont-menu {
+        width: 10%;
+        align-items: center;
+        justify-content: end;
+    }
+    .tittle-info {
+        color: #fff;
+        width: 90%;
+        font-size: 25px;
+    }
+    h2 b {
+        font-weight: 600;
+    }
+    .contenido-info {
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #fff;
+        font-size: 12px;
+    }
+    .btn-cont {
+        transition: 0.5s;
+        font-weight: 800;
+        margin-top: 10px;
+        width: 60%;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 25px;
+    }
+    .social-icons {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    a li {
+        font-size: 15px;
+        margin: 10px;
+        color: #fff;
+    }
+    .icon {
+        color: #000; 
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        transition: color 0.3s, background-color 0.3s;
+        text-decoration: none;
+    }
+    .icon:hover {
+        color: #fff; 
+        background-color: #000; 
+    }
+    .imagen-contenido {
+        display: flex;
+        justify-content: center;
+    }
+    .img-cont {
+    width: 80%;
+    }
+}
+@media (max-width: 550px) {
+    section {
+        border-radius: 15px;
+        padding: 4%;
+        width: 90%;
+        height: 400px;
+        margin: 1%;
+        background-color: #000c;
+        display: flex;
+        justify-content: start;
+    }
+    .btn-close {
+        right: -150px;
+    }
+    .desactive {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    .navegation {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 40px;
+    }
+    .cont-menu {
+        width: 10%;
+        align-items: center;
+        justify-content: end;
+    }
+    .tittle-info {
+        color: #fff;
+        width: 90%;
+        font-size: 18px;
+    }
+    h2 b {
+        font-weight: 600;
+    }
+    .contenido-info {
+        margin-top: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #fff;
+        font-size: 8px;
+    }
+    .btn-cont {
+        font-size: 10px;
+        transition: 0.5s;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 50%;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 25px;
+    }
+    .social-icons {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    a li {
+        font-size: 8px;
+        margin: 10px;
+        color: #fff;
+    }
+    .icon {
+        color: #000; 
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-size: 15px;
+        transition: color 0.3s, background-color 0.3s;
+        text-decoration: none;
+    }
+    .icon:hover {
+        color: #fff; 
+        background-color: #000; 
+    }
+    .imagen-contenido {
+        display: flex;
+        justify-content: center;
+    }
+    .img-cont {
+    width: 80%;
+    }
 }

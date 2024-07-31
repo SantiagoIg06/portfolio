@@ -18,19 +18,28 @@
     </nav>
     <section>
         <div class="cont">
-            <div class="navegation">
+            <div class="modal modalDsc" id="modal-cont">
+                <button class="btn-close" id="btnCerr">X</button>
+                <div class="menuModal">
+                    <a href="#"><li class="desactive" id="modalList1">Home</li></a>
+                    <a href="#"><li class="desactive" id="modalList2">Menu</li></a>
+                    <a href="#"><li class="desactive" id="modalList3">About</li></a>
+                    <a href="#"><li class="desactive" id="modalList4">Contact</li></a>
+                </div>
+            </div>
+            <div class="navegation" id="infoSup">
                 <div class="cont-logo">
                     <img class="logo" src="../imgs/KFC-logo.png" alt="logo kfc">
                 </div>
                 <div class="cont-menu">
-                    <a href="https://www.kfc.co/" target="_blank" rel="noopener noreferrer"><img class="img-menu desactive" src="../imgs/menu.png" alt="logo menu"></a>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Menu</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="#" ><img class="img-menu desactive" id="menu" src="../imgs/menu.png" alt="logo menu"></a>
+                    <a href="#"><li class="active" id="list1">Home</li></a>
+                    <a href="#"><li class="active" id="list2">Menu</li></a>
+                    <a href="#"><li class="active" id="list3">About</li></a>
+                    <a href="#"><li class="active" id="list4">Contact</li></a>
                 </div>
             </div>
-            <div class="cont-info">
+            <div class="cont-info" id="infoInf">
                 <div class="contenido">
                     <div class="tittle-info">
                         <h2>Its Finger Lickin <b>Good.</b></h2>
@@ -50,8 +59,7 @@
                     <img class="img-cont" src="../imgs/hamburguesaKfc.png" alt="kfc hamburguesa">
                 </div>
             </div>
-
-        </div>
+        </div>             
     </section>
     <script src="./index.js"></script>
 </body>
