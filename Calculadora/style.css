@@ -9,47 +9,120 @@ section {
     justify-content: center;
 }
 .calcu {
-    background-color: #fff;
+    transition: 1s;
+    background-color:#fff;
     margin-top: 25px;
     -webkit-box-shadow: 0px 0px 36px -1px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 0px 36px -1px rgba(0,0,0,0.49);
     box-shadow: 0px 0px 36px -1px rgba(0,0,0,0.49);
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid #0008;
+    border: 2px solid #000;
     width: 25%;
     height: 500px;
 }
-.mode {
-    display: flex;
-    text-align: end;
+.calcu2 {
+    transition: 1s;
+    background-color:#000;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 36px -1px rgba(255,255,255,0.70);
+    -moz-box-shadow: 0px 0px 36px -1px rgba(255,255,255,0.70);
+    box-shadow: 0px 0px 36px -1px rgba(255,255,255,0.70);
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #fa0;
+    width: 25%;
+    height: 500px;
+}
+.cont-gral1 {
+    transition: 1s;
     width: 90%;
-    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.cont-gral2 {
+    transition: 1s;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.cont1 {
+    border: 1px solid #000;
+    transition: 1s;
+    width: 15%;
+    border-radius: 100px;
+}
+.cont2 {
+    border: 1px solid #fff;
+    transition: 1s;
+    width: 15%;
+    border-radius: 100px;
+}
+.img-mode {
+    cursor: pointer;
+    width: 50%;
+}
+.img-mode-bl {
+    transition: 1s;
+    animation: movebl 1s forwards;
+    filter: brightness(0%); 
+}
+.img-mode-os {
+    transition: 1s;
+    animation: moveos 1s forwards;
+}
+@keyframes movebl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes moveos {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .text-cont {
-    width: 85%;
+    width: 90%;
     padding: 15px;
-    height: 20px;
+    height: 30px;
     display: flex;
     text-align: end;
 
 }
 .text {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: 1s;
     font-size: 25px;
     font-weight: 800;
-    color: #111111;
+    color: #000;
+}
+.text2 {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: 1s;
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
 }
 .nums {
     display: flex;
     justify-content: center;
 }
-.num1 {
-    width: 65%;
-    height: 450px;
-}
-.num2 {
-    width: 25%;
-    height: 450px;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .btn {
     font-size: 20px;
@@ -58,48 +131,62 @@ section {
     height: 58px;
     border-radius: 50px;
 }
-.btn2 {
-    font-size: 20px;
-    margin: 10px 5px;
-    width: 58px;
-    height: 140px;
-    border-radius: 50px;
+.btnCl {
+    transition: 1s;
+    border: transparent;
+    background-color: #000;
+    color: #fff;
+}
+.btnCl:focus {
+    transition: 0.5s;
+    border: transparent;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
 }
 
 .btnCl1 {
+    transition: 1s;
     border: transparent;
     background-color: #fc6565;
 }
 .btnCl1:focus {
+    transition: 1s;
     background-color: #fc4242;
     transition: 0.5s;
-    border: 1px solid black;
+    border: 1px solid #fff;
 }
 .btnCl2 {
+    transition: 1s;
     border: transparent;
     background-color: #fc63e7;
 }
 .btnCl2:focus {
+    transition: 1s;
     background-color: #ff33e4;
     transition: 0.5s;
-    border: 1px solid black;
+    border: 1px solid #fff;
 }
 .btnCl3 {
+    transition: 1s;
     border: transparent;
     background-color: #53e5ff;
 }
 .btnCl3:focus {
+    transition: 1s;
     background-color: #2c80fd;
     transition: 0.5s;
-    border: 1px solid black;
+    border: 1px solid #fff;
 }
 .btnCl4 {
+    transition: 1s;
     border: transparent;
     background-color: #53ff78;
 }
 .btnCl4:focus {
+    transition: 1s;
     background-color: #26fa31;
     transition: 0.5s;
-    border: 1px solid black;
+    border: 1px solid #fff;
 }
 

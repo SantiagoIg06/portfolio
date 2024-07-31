@@ -1,4 +1,4 @@
-<!-- V1 PENDIENTE-->
+<!-- V1-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,37 +14,45 @@
         
     </nav>
     <section>
-        <div class="calcu">
-            <div class="mode" id="modeDW">
-                <p>X</p>
+        <div class="calcu" id="calculadora">
+            <div class="cont-gral1" id="contGral">
+                <div class="cont1" id="contImgMove">
+                    <img class="img-mode img-mode-bl" id="moveImg" src="../imgs/mode.png" alt="mas">
+                </div>
             </div>
-            <div class="text-cont">
-                <p class="text" id="result">0</p>
-            </div>
+            
             <div class="nums">
-                <div class="num1">
-                    <button class="btn btnCl1" id="borr">C</button>
-                    <button class="btn btnCl2" id="divi">/</button>
-                    <button class="btn btnCl2" id="multi">X</button>
-                    <button class="btn btnCl3" id="7">7</button>
-                    <button class="btn btnCl3" id="8">8</button>
-                    <button class="btn btnCl3" id="9">9</button>
-                    <button class="btn btnCl3" id="4">4</button>
-                    <button class="btn btnCl3" id="5">5</button>
-                    <button class="btn btnCl3" id="6">6</button>
-                    <button class="btn btnCl3" id="1">1</button>
-                    <button class="btn btnCl3" id="2">2</button>
-                    <button class="btn btnCl3" id="3">3</button>
-                    <button class="btn btnCl2" id=",">.</button>
-                    <button class="btn btnCl3" id="0">0</button>
-                    <button class="btn btnCl2" id="00">00</button>
-                </div>
-                <div class="num2">
-                    <button class="btn btnCl2" id="porc">%</button>
-                    <button class="btn btnCl2" id="men">-</button>
-                    <button class="btn btnCl2" id="mas">+</button>
-                    <button class="btn2 btnCl4" id="igu">=</button>
-                </div>
+                <form name="calculator">
+                    <div class="text-cont">
+                        <input class="text" id="result" type="textfield" name="ans" value="" autocomplete="off" readonly> 
+                    </div>
+                <br>
+                    <input class="btn btnCl" id="borr" type="reset" value="C">
+                    <input class="btn btnCl" id="borr1" type="button" value="<-" onclick="borrUlti()">
+                    <input class="btn btnCl" id="porc" type="button" value="%" onclick="document.calculator.ans.value+='%'">
+                    <input class="btn btnCl" id="divi" type="button" value="/" onclick="document.calculator.ans.value+='/'">
+                <br>
+                    <input class="btn btnCl" id="7" type="button" value="7" onclick="document.calculator.ans.value+='7'">
+                    <input class="btn btnCl" id="8" type="button" value="8" onclick="document.calculator.ans.value+='8'">
+                    <input class="btn btnCl" id="9" type="button" value="9" onclick="document.calculator.ans.value+='9'">
+                    <input class="btn btnCl" id="multi" type="button" value="X" onclick="document.calculator.ans.value+='*'"">
+                <br>
+                    <input class="btn btnCl" id="4" type="button" value="4" onclick="document.calculator.ans.value+='4'">
+                    <input class="btn btnCl" id="5" type="button" value="5" onclick="document.calculator.ans.value+='5'">
+                    <input class="btn btnCl" id="6" type="button" value="6" onclick="document.calculator.ans.value+='6'">
+                    <input class="btn btnCl" id="men" type="button" value="-" onclick="document.calculator.ans.value+='-'" >
+                <br>
+                    <input class="btn btnCl" id="1" type="button" value="1" onclick="document.calculator.ans.value+='1'">
+                    <input class="btn btnCl" id="2" type="button" value="2" onclick="document.calculator.ans.value+='2'">
+                    <input class="btn btnCl" id="3" type="button" value="3" onclick="document.calculator.ans.value+='3'">
+                    <input class="btn btnCl" id="mas" type="button" value="+" onclick="document.calculator.ans.value+='+'">
+                <br>
+                    <input class="btn btnCl" id="0" type="button" value="0" onclick="document.calculator.ans.value+=''">
+                    <input class="btn btnCl" id="," type="button" value="." onclick="document.calculator.ans.value+='.'">
+                    <input class="btn btnCl" id="00" type="button" value="00" onclick="document.calculator.ans.value+='00'">
+                    <input class="btn btnCl" id="igu" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+
+                </form>
             </div>
         </div>
     </section>
