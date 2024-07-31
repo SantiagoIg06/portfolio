@@ -1,4 +1,3 @@
-
 section {
     padding: 10px 0px ;
     width: 98%;
@@ -19,7 +18,7 @@ section {
     padding: 20px;
     border: 2px solid #000;
     width: 25%;
-    height: 500px;
+    height: 480px;
 }
 .calcu2 {
     transition: 1s;
@@ -32,7 +31,7 @@ section {
     padding: 20px;
     border: 2px solid #fa0;
     width: 25%;
-    height: 500px;
+    height: 480px;
 }
 .cont-gral1 {
     transition: 1s;
@@ -49,13 +48,15 @@ section {
     justify-content: flex-end;
 }
 .cont1 {
-    border: 1px solid #000;
+    display: flex;
+    justify-content: flex-end;
     transition: 1s;
     width: 15%;
     border-radius: 100px;
 }
 .cont2 {
-    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
     transition: 1s;
     width: 15%;
     border-radius: 100px;
@@ -66,29 +67,12 @@ section {
 }
 .img-mode-bl {
     transition: 1s;
-    animation: movebl 1s forwards;
     filter: brightness(0%); 
 }
 .img-mode-os {
     transition: 1s;
-    animation: moveos 1s forwards;
 }
-@keyframes movebl {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-@keyframes moveos {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+
 .text-cont {
     width: 90%;
     padding: 15px;
@@ -127,8 +111,8 @@ form {
 .btn {
     font-size: 20px;
     margin: 10px 5px;
-    width: 58px;
-    height: 58px;
+    width: 20%;
+    height: 20%;
     border-radius: 50px;
 }
 .btnCl {
@@ -190,3 +174,93 @@ form {
     border: 1px solid #fff;
 }
 
+@media (max-width:900px) {
+    .calcu {
+        height: 350px;
+    }
+    .calcu2 {
+        height: 350px;
+    }
+    .btn {
+        font-size: 20px;
+        margin: 5px 2px;
+        width: 20%;
+        height: 20%;
+        border-radius: 50px;
+    }
+    .text {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .text2 {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media (max-width:650px) {
+    .calcu {
+        height: 250px;
+    }
+    .calcu2 {
+        height: 250px;
+    }
+    .btn {
+        font-size: 15px;
+        margin: 5px 3px;
+        width: 20%;
+        height: 15%;
+        border-radius: 50px;
+    }
+    .text-cont {
+        width: 95%;
+        padding: 10px;
+        height: 30px;
+        display: flex;
+        text-align: end;
+    
+    }
+    .text {
+        padding: 3px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .text2 {
+        padding: 3px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media (max-width:500px) {
+    .calcu {
+        height: 200px;
+    }
+    .calcu2 {
+        height: 200px;
+    }
+    .btn {
+        font-size: 10px;
+        margin: 2px 1px;
+        width: 20%;
+        height: 20%;
+        border-radius: 50px;
+    }
+    .text-cont {
+        width: 95%;
+        padding: 5px;
+        height: 25px;
+        display: flex;
+        text-align: end;
+    }
+    .text {
+        padding: 2px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .text2 {
+        padding: 2px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}

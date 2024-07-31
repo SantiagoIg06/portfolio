@@ -2,16 +2,17 @@ section {
     border-radius: 15px;
     padding: 10px;
     width: 95%;
+    height: 550px;
     margin: 1%;
     background-color: #000c;
-    margin: 20px;
     display: flex;
     justify-content: start;
 }
 
 .navBar {
+    transition: 1s;
     background-color: white;
-    width: 55px;
+    width: 4%;
     height: 500px;
     margin: 10px;
     display: flex;
@@ -24,11 +25,11 @@ section {
 }
 
 .navBar.expanded {
-    width: 200px; 
+    transition: 1s;
+    width: 25%; 
 }
 .nav1 {
     border-bottom: 1px solid black;
-
 }
 .nav1, .nav2 {
     width: 100%;
@@ -38,7 +39,7 @@ section {
 }
 
 .nav2 {
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +57,7 @@ section {
 }
 
 .img-nav {
-    width: 30px; 
+    width: 50%; 
     height: 30px; 
 }
 
@@ -76,6 +77,7 @@ section {
 
 .navBar.expanded .menu-text,
 .navBar.expanded .btn-close {
+    transition: 1s;
     display: block;
 }
 
@@ -86,9 +88,16 @@ section div div a {
     position: relative;
 }
 
-.img-navM {
-    width: 35px; 
-    height: 35px; 
+.img-navM.notExpanded {
+    width: 80%; 
+    height: auto; 
+    margin: 10px 0px;
+    padding: 5px;
+    transition: transform 1s, background-color 1s;
+}
+.img-navM.expanded{
+    width: 20%; 
+    height: auto; 
     margin: 10px 0px;
     padding: 5px;
     transition: transform 1s, background-color 1s;
@@ -150,4 +159,64 @@ section div div a {
 }
 .img-ajs{
     border-radius: 10px;
+}
+
+@media (max-width: 1050px) {
+    section {
+        height: 450px;
+    }
+    .navBar {
+        
+        height: 90%;
+    }
+}
+@media (max-width: 750px) {
+    .navBar {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .nav2 {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-navM {
+        width: 25px !important; 
+        padding: 2px !important;
+        transition: transform 1s, background-color 1s;
+    }
+    .img-nav {
+        width: 40px; 
+        height: 30px; 
+    }
+    .navBar.expanded .nav-text {
+        transition: 1s;
+
+        transform: translate(-50px, 30px);
+
+    }
+    
+    .navBar:not(.expanded) .img-navM:hover {
+        transition: 1s;
+
+        transform: translateX(20px);
+    }
+    
+    .navBar.expanded .img-navM:hover {
+        transition: 1s;
+        transform: translateY(-10px);
+    }
+    .navBar.expanded {
+        width: 100%; 
+        height: 100px;
+    }
+    .nav1 {
+        border-bottom: transparent;
+    }
 }
