@@ -104,13 +104,20 @@ section div div a {
 }
 
 .nav-text {
+    color: #000;
     display: none;
     margin-left: 10px;
     opacity: 0;
     transition: opacity 1s ease, transform 1s ease;
     border-radius: 10px;
 }
-
+.nav-text:hover {
+    color: #2274ee;
+}
+section div div a:hover {
+    color: #2274ee;
+    border-bottom: 1px solid #000;
+}
 .navBar.expanded .nav-text {
     width: 50%;
     display: inline;
@@ -191,6 +198,7 @@ section div div a {
         padding: 2px !important;
         transition: transform 1s, background-color 1s;
     }
+    
     .img-nav {
         width: 40px; 
         height: 30px; 
