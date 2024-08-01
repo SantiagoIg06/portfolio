@@ -96,7 +96,7 @@ section div div a {
     transition: transform 1s, background-color 1s;
 }
 .img-navM.expanded{
-    width: 20%; 
+    width: 15%; 
     height: auto; 
     margin: 10px 0px;
     padding: 5px;
