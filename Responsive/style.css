@@ -2,7 +2,7 @@ section {
     border-radius: 15px;
     padding: 4%;
     width: 90%;
-    height: 100%;
+    height: 850px;
     margin: 1%;
     background-color: #000c;
     display: flex;
@@ -19,7 +19,7 @@ section {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 60px;
+    height: 10%;
 }
 .desactive {
     transition: 1s;
@@ -75,7 +75,7 @@ div a li:hover {
 }
 a li {
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
 }
 .logo {
     filter: brightness(150%);
@@ -93,7 +93,7 @@ a li {
 .tittle-info {
     color: #fff;
     width: 70%;
-    font-size: 45px;
+    font-size: 50px;
 }
 h2 b {
     font-weight: 800;
@@ -102,14 +102,15 @@ h2 b {
     margin-top: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #fff;
-    font-size: 15px;
+    font-size: 30px;
 }
 .btn-cont {
+    font-size: 30px;
     transition: 0.5s;
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 20px;
-    width: 30%;
-    height: 40px;
+    width: 40%;
+    height: 50px;
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
@@ -122,13 +123,14 @@ h2 b {
     border-color: #fff;
 }
 .social-icons {
-    width: 25%;
+    width: 35%;
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px;
 }
 .icon {
+    margin: 10px;
     color: #000; 
     display: inline-block;
     width: 40px;
@@ -137,7 +139,7 @@ h2 b {
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 40px;
     transition: color 0.3s, background-color 0.3s;
     text-decoration: none;
 }
@@ -150,92 +152,80 @@ h2 b {
     justify-content: flex-end;
 }
 .img-cont {
-width: 80%;
+width: 70%;
 }
-
-@media (max-width: 1100px) {
+@media(max-width: 1900px) {
     section {
         border-radius: 15px;
         padding: 4%;
         width: 90%;
-        height: 450px;
+        height: 600px;
         margin: 1%;
         background-color: #000c;
         display: flex;
         justify-content: start;
     }
-    .navegation {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 50px;
-    }
-    .cont-menu {
-        width: 10%;
-        align-items: center;
-        justify-content: end;
-    }
-    .tittle-info {
-        color: #fff;
-        width: 60%;
-        font-size: 25px;
-    }
-    h2 b {
-        font-weight: 600;
+    a li {
+        font-size: 20px;
     }
     .contenido-info {
-        margin-top: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #fff;
-        font-size: 15px;
+        font-size: 20px;
     }
     .btn-cont {
-        transition: 0.5s;
-        font-weight: 800;
-        margin-top: 10px;
-        width: 40%;
-        height: 40px;
-        background-color: #fff;
-        border: 1px solid #000;
-        color: #000;
-        border-radius: 25px;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+    h2 {
+        font-size: 50px;
     }
     .social-icons {
-        width: 50%;
+        width: 25%;
+        margin: 10px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+    }
+
+}
+@media (max-width: 1100px) {
+    section {
+        border-radius: 15px;
+        padding: 4%;
+        width: 90%;
+        height: 500px;
+        margin: 1%;
+        background-color: #000c;
         display: flex;
-        gap: 10px;
-        justify-content: center;
-        margin-top: 20px;
+        justify-content: start;
+    }
+    h2 {
+        font-size: 30px;
     }
     a li {
         font-size: 15px;
-        margin: 10px;
-        color: #fff;
     }
+    .contenido-info {
+        font-size: 15px;
+    }
+    .social-icons {
+        width: 30%;
+    }
+
     .icon {
-        color: #000; 
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 40px;
+        margin: 5px;
         font-size: 20px;
-        transition: color 0.3s, background-color 0.3s;
-        text-decoration: none;
+
     }
-    .icon:hover {
-        color: #fff; 
-        background-color: #000; 
+    .btn-cont {
+        font-size: 20px;
+        width: 40%;
+        height: 30px;
     }
-    .imagen-contenido {
-        display: flex;
-        justify-content: center;
-    }
-    .img-cont {
-    width: 80%;
-    }
+    
+
 }
 
 @media (max-width: 900px) {
@@ -243,11 +233,29 @@ width: 80%;
         border-radius: 15px;
         padding: 4%;
         width: 90%;
-        height: 450px;
+        height: 600px;
         margin: 1%;
         background-color: #000c;
         display: flex;
         justify-content: start;
+    }
+    .tittle-info {
+        display: flex;
+        align-items: center;
+    }
+    .cont-info {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido {
+        width: 90%;
+    }
+    .contenido-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .modalList1,.modalList2,.modalList3,.modalList4 {
@@ -333,6 +341,7 @@ width: 80%;
         font-size: 12px;
     }
     .btn-cont {
+        font-size: 15px;
         transition: 0.5s;
         font-weight: 800;
         margin-top: 10px;

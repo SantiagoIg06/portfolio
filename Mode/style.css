@@ -2,7 +2,7 @@ section {
     border-radius: 15px;
     padding: 10px;
     width: 95%;
-    height: 550px;
+    height: 800px;
     margin: 1%;
     background-color: #351448f1;
     margin: 20px;
@@ -68,4 +68,25 @@ section {
     100% {
         transform: translateX(0);
     }
+}
+@media(max-width: 1900px) {
+    section {
+        height: 650px;
+    }
+}
+@media(max-width: 1100px) {
+    section {
+        height: 500px;
+    }
+    .img-mode {
+        cursor: pointer;
+        width: 50%;
+        margin: 0px;
+    }
+}
+@media(max-width: 700px) {
+    section {
+        height: 400px;
+    }
+    
 }
